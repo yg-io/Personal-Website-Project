@@ -1,0 +1,139 @@
+/* DEBUG */
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  font-family: 'PT Serif', serif;
+  font-size: 15px;
+} 
+
+header{
+  height: 90px;
+  background-color: #100d11;
+  width: 100%;
+  position: fixed;
+}
+
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("assets/dream.gif");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 27px;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #5e6ee8;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+/*ADDED HOVER!*/
+.navbar ul li:hover::after{
+  width: 100%;
+}
+#hero-text1{
+  position: absolute;
+  top: 47%;
+  left: 40%;
+  font-family: 'PT Serif', serif;
+  color: whitesmoke;
+}
+  
+#hero-text2{
+  position: absolute;
+  top: 38%;
+  font-size: 20px;
+  left: 56%;
+  font-family: 'PT Serif', serif;
+  color: whitesmoke;
+}
+  
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+.fade-in{
+  animation: fadeIn 10s ease-in-out;
+}
+
+body{
+  background-color: #0f0f0f;
+}
+
+.logo{
+  width: 40px;
+  cursor: pointer;
+}
+
+#about-text{
+  font-size: 32px;
+  text-align: center;
+  transform: translateY(170%);
+  color: whitesmoke;
+}
+
+.about-me-image {
+  float: left;
+  height: 470px;
+  width: 450px;
+  margin-right: 40px;
+  animation: fadeIn 10s ease-in-out;
+  transform: translateY(20%);
+}
+ 
+#myAudio {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+#about-me-paragraph{
+  font-size: 27px;
+  transform: translateY(39%);
+  color: whitesmoke;
+}
+
+#about-me-paragraph-2{
+  font-size: 27px;
+  transform: translateY(270%);
+  color: whitesmoke;
+}
+#about-me-paragraph-3{
+  font-size: 27px;
+  transform: translateY(290%);
+  color: whitesmoke;
+}
+#about-me-paragraph-4{
+  font-size: 27px;
+  transform: translateY(310%);
+  color: whitesmoke;
+}
+/*I need to work on how to make and move things around properly :/  but it works better fullscreened*/
